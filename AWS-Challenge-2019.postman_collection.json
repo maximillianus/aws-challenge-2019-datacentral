@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "bec65087-a9f0-481e-8a41-59b2dd39ba18",
+		"name": "AWS-Challenge-2019",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Landing",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5050/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve All Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5050/roaddata",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"roaddata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Truncate Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5050/truncate_data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"truncate_data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"camera_id\": 5,\n\t\"latitude\": -6.242336,\n\t\"longitude\": 106.802720,\n\t\"road_condition\": \"hole\",\n\t\"confidence_score\": 88\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5050/roaddata_input",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"roaddata_input"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
