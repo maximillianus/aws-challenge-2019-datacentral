@@ -1,8 +1,8 @@
 from flask import Flask, request, jsonify
 from flask_restful import Resource, Api, reqparse
 # from db_conn import get_all_data, make_postgres_conn, update_data, DB_CREDENTIALS
-from db_sqlite import create_conn, retrieve_data, insert_data, truncate_table
-from db_sqlite import DBNAME, TABLENAME
+from db.db_sqlite import create_conn, retrieve_data, insert_data, truncate_table
+from db.db_sqlite import DBNAME, TABLENAME
 from jsonschema import validate
 
 app = Flask(__name__)
