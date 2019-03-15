@@ -1,10 +1,15 @@
 # Road Data
 
 ## Instruction on how to run:
-1. Activate virtual environment  
+1. Ensure you have python3 and virtualenv
+2. Create virtualenv  
+   ```virtualenv .venv```
+3. Activate virtual environment  
    ```source .venv/bin/activate```
-2. Run the API using python  
+4. Install necessary libraries  
+    ```pip3 install -r requirements.txt```
+5. Run the API using python  
    ```python3 api.py```
-3. Dont for get to deactivate virtual env once done  
+6. Dont for get to deactivate virtual env once done  
    ```deactivate```
-4. Note that postman collection is attached.
+7. Note that postman collection is attached.
