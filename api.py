@@ -4,8 +4,10 @@ from flask_restful import Resource, Api, reqparse
 from db.db_sqlite import create_conn, retrieve_data, insert_data, truncate_table
 from db.db_sqlite import DBNAME, TABLENAME
 from jsonschema import validate
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 api = Api(app)
 
 # parser = reqparse.RequestParser()
